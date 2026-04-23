@@ -50,4 +50,4 @@ Some tips for Canva were shared for ease of use and for creating moving
 elements.
 
 You can view the Canva slides here
-https://hmc-open-source.github.io/canva/canva.html
+https://hmc-open-source.github.io/marp/Canva/canva.html
