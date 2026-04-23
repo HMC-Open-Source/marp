@@ -12,3 +12,23 @@ Review the ``demo.md`` file alongside the preview to learn how to use marp.
 
 Feel free to make edits and submit PRs! Except, I'm not sure if I'll be good
 about reviewing them. 
+
+# Learn more ways to use marp
+| Description       | Link                                     |
+| ----------------- | ---------------------------------------- |
+| Official Website  | https://marp.app/                        |
+| Marp VS Code Repo | https://github.com/marp-team/marp-vscode |
+
+# Workshop Discussion
+Some students have never used markdown before. It's not really taught in classes
+formally because markdown is a way to create documentation with *extremely*
+easy ways to format the text, meaning, markdown is really easy to learn!
+
+Look up markdown documentation (it's not a lot)
+
+## What's cool about markdown, where would I use it?
+- github READMEs (README.md) for documentation
+- Converting markdown to various formats
+    - CS 70 content is all in markdown! Prof Melissa created her own software to convert that to the website we know
+- Obsidian notetaking
+    - Obsidian has a paid service to turn your notes into a webpage (very Wiki like)
