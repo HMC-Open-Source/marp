@@ -13,6 +13,10 @@ Review the ``demo.md`` file alongside the preview to learn how to use marp.
 Feel free to make edits and submit PRs! Except, I'm not sure if I'll be good
 about reviewing them. 
 
+## bonus: you can view the slides for demo.md here on github
+https://hmc-open-source.github.io/marp/demo.html
+You can host these presentations as github pages! 
+
 # Learn more ways to use marp
 | Description       | Link                                     |
 | ----------------- | ---------------------------------------- |
