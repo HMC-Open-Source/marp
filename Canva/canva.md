@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: default
+theme: pastel 
 ---
 
 # Canva Tips

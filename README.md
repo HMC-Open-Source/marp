@@ -36,3 +36,18 @@ Look up markdown documentation (it's not a lot)
     - CS 70 content is all in markdown! Prof Melissa created her own software to convert that to the website we know
 - Obsidian notetaking
     - Obsidian has a paid service to turn your notes into a webpage (very Wiki like)
+
+# The Canva folder
+This workshop also included quick tips for enhancing Canva presentations.
+
+Marp is meant to simplify presentations. You should be creating minimal slides
+with no text heavy content. There are no frills with Marp.
+
+Canva is kind of the opposite and allows for all the frills. But it can really
+enhance the learning experience if you use it in creative ways. 
+
+Some tips for Canva were shared for ease of use and for creating moving 
+elements.
+
+You can view the Canva slides here
+https://hmc-open-source.github.io/canva/canva.html
