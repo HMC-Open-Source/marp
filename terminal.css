@@ -1,0 +1,244 @@
+/* @theme terminal */
+
+@import 'default';
+
+:root {
+  --color-bg: #0d0d0d;
+  --color-bg-alt: #1a1a1a;
+  --color-border: #2a2a2a;
+  --color-green: #00ff41;
+  --color-green-dim: #00b32c;
+  --color-amber: #ffb300;
+  --color-text: #c8ffc8;
+  --color-muted: #4a7a4a;
+  --color-header: #00ff41;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Courier New', monospace;
+}
+
+section {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 22px;
+  padding: 60px 70px;
+  border: none;
+
+  /* subtle scanline overlay */
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.15) 2px,
+    rgba(0, 0, 0, 0.15) 4px
+  );
+}
+
+/* ── Prompt prefix on slides ── */
+section::before {
+  content: '> ';
+  color: var(--color-green);
+  font-size: 0.75em;
+  position: absolute;
+  top: 24px;
+  left: 70px;
+  opacity: 0.5;
+}
+
+/* ── Headings ── */
+h1 {
+  color: var(--color-green);
+  font-size: 2em;
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-green-dim);
+  padding-bottom: 12px;
+  margin-bottom: 28px;
+  text-shadow: 0 0 12px rgba(0, 255, 65, 0.5);
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  color: var(--color-green-dim);
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+}
+
+h2::before {
+  content: '## ';
+  color: var(--color-muted);
+}
+
+h3 {
+  color: var(--color-amber);
+  font-size: 1.15em;
+  margin-bottom: 10px;
+}
+
+h3::before {
+  content: '### ';
+  color: var(--color-muted);
+}
+
+/* ── Body text ── */
+p {
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* ── Lists ── */
+ul, ol {
+  padding-left: 1.4em;
+  line-height: 1.8;
+}
+
+li::marker {
+  color: var(--color-green);
+}
+
+ul li::before {
+  color: var(--color-green);
+}
+
+/* ── Inline code ── */
+code {
+  background-color: var(--color-bg-alt);
+  color: var(--color-amber);
+  border: 1px solid var(--color-border);
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-size: 0.88em;
+  font-family: var(--font-mono);
+}
+
+/* ── Code blocks ── */
+pre {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-green-dim);
+  border-left: 4px solid var(--color-green);
+  border-radius: 4px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  overflow: hidden;
+  box-shadow: 0 0 16px rgba(0, 255, 65, 0.1);
+}
+
+pre::before {
+  content: '$ ';
+  color: var(--color-green);
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--color-text);
+  font-size: 0.85em;
+}
+
+/* ── Blockquote ── */
+blockquote {
+  border-left: 3px solid var(--color-amber);
+  margin: 16px 0;
+  padding: 4px 20px;
+  color: var(--color-amber);
+  background-color: rgba(255, 179, 0, 0.05);
+}
+
+blockquote::before {
+  content: '// ';
+  color: var(--color-muted);
+}
+
+/* ── Tables ── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+th {
+  background-color: var(--color-bg-alt);
+  color: var(--color-green);
+  border: 1px solid var(--color-green-dim);
+  padding: 8px 14px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85em;
+}
+
+td {
+  border: 1px solid var(--color-border);
+  padding: 8px 14px;
+  color: var(--color-text);
+}
+
+tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* ── Links ── */
+a {
+  color: var(--color-green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* ── Strong / em ── */
+strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+em {
+  color: var(--color-amber);
+  font-style: normal;
+}
+
+/* ── Slide number ── */
+section::after {
+  font-family: var(--font-mono);
+  font-size: 0.65em;
+  color: var(--color-muted);
+}
+
+/* ── Title slide (<!-- _class: title -->) ── */
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+section.title::before {
+  content: none;
+}
+
+section.title h1 {
+  font-size: 2.8em;
+  border-bottom: 2px solid var(--color-green);
+  text-shadow: 0 0 24px rgba(0, 255, 65, 0.7);
+  margin-bottom: 20px;
+}
+
+section.title h1::before {
+  content: '> ';
+  color: var(--color-muted);
+}
+
+section.title p {
+  color: var(--color-muted);
+  font-size: 0.85em;
+}
+
+/* ── Invert (light) class ── */
+section.invert {
+  background-color: #f0fff0;
+  color: #1a1a1a;
+}

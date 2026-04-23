@@ -1,0 +1,6 @@
+{
+    "markdown.marp.themes": [
+        "./terminal.css",
+        "./pastel.css"
+    ]
+}

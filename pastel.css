@@ -1,0 +1,193 @@
+/* @theme pastel */
+
+@import 'default';
+
+:root {
+  --color-bg: #f4f6fb;
+  --color-surface: #eaecf7;
+  --color-accent: #a3b4e0;
+  --color-accent-soft: #c9d4f0;
+  --color-mint: #9ecfca;
+  --color-lavender: #b8a9d9;
+  --color-text: #3a3d52;
+  --color-muted: #8e93b0;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+section {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 22px;
+  padding: 64px 72px;
+}
+
+/* ── Headings ── */
+h1 {
+  font-size: 1.9em;
+  font-weight: 600;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-accent-soft);
+  padding-bottom: 12px;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.35em;
+  font-weight: 500;
+  color: var(--color-lavender);
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--color-mint);
+  margin-bottom: 10px;
+}
+
+/* ── Body text ── */
+p {
+  line-height: 1.75;
+  margin-bottom: 14px;
+  color: var(--color-text);
+}
+
+/* ── Lists ── */
+ul, ol {
+  padding-left: 1.3em;
+  line-height: 1.9;
+}
+
+li::marker {
+  color: var(--color-accent);
+}
+
+/* ── Inline code ── */
+code {
+  background-color: var(--color-surface);
+  color: var(--color-lavender);
+  border: 1px solid var(--color-accent-soft);
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 0.87em;
+}
+
+/* ── Code blocks ── */
+pre {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-accent-soft);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--color-text);
+  font-size: 0.85em;
+}
+
+/* ── Blockquote ── */
+blockquote {
+  border-left: 3px solid var(--color-mint);
+  margin: 16px 0;
+  padding: 6px 20px;
+  color: var(--color-muted);
+  background-color: rgba(158, 207, 202, 0.1);
+  border-radius: 0 6px 6px 0;
+}
+
+/* ── Tables ── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+th {
+  background-color: var(--color-surface);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent-soft);
+  padding: 9px 14px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+td {
+  border: 1px solid var(--color-accent-soft);
+  padding: 9px 14px;
+}
+
+tr:nth-child(even) td {
+  background-color: rgba(163, 180, 224, 0.06);
+}
+
+/* ── Links ── */
+a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ── Strong / em ── */
+strong {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+em {
+  color: var(--color-lavender);
+  font-style: italic;
+}
+
+/* ── Slide number ── */
+section::after {
+  font-family: var(--font-sans);
+  font-size: 0.65em;
+  color: var(--color-muted);
+}
+
+/* ── Title slide (<!-- _class: title -->) ── */
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #eef1fb 0%, #e6ecf8 60%, #e8f3f1 100%);
+}
+
+section.title h1 {
+  font-size: 2.6em;
+  font-weight: 700;
+  border-bottom: none;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+section.title p {
+  color: var(--color-muted);
+  font-size: 0.9em;
+}
+
+/* ── Divider slide (<!-- _class: divider -->) ── */
+section.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-surface);
+}
+
+section.divider h1 {
+  border-bottom: none;
+  color: var(--color-accent);
+  font-size: 2em;
+}
